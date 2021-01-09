@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/https://Iznat_DZ/static/css/main.4988e212.chunk.css",
-    "main.js": "/https://Iznat_DZ/static/js/main.776b3c16.chunk.js",
-    "main.js.map": "/https://Iznat_DZ/static/js/main.776b3c16.chunk.js.map",
-    "runtime-main.js": "/https://Iznat_DZ/static/js/runtime-main.67c452bb.js",
-    "runtime-main.js.map": "/https://Iznat_DZ/static/js/runtime-main.67c452bb.js.map",
-    "static/js/2.5e4a36f5.chunk.js": "/https://Iznat_DZ/static/js/2.5e4a36f5.chunk.js",
-    "static/js/2.5e4a36f5.chunk.js.map": "/https://Iznat_DZ/static/js/2.5e4a36f5.chunk.js.map",
-    "index.html": "/https://Iznat_DZ/index.html",
-    "precache-manifest.65ba206e7bd0060a6c71950c2fee4a5d.js": "/https://Iznat_DZ/precache-manifest.65ba206e7bd0060a6c71950c2fee4a5d.js",
-    "service-worker.js": "/https://Iznat_DZ/service-worker.js",
-    "static/css/main.4988e212.chunk.css.map": "/https://Iznat_DZ/static/css/main.4988e212.chunk.css.map",
-    "static/js/2.5e4a36f5.chunk.js.LICENSE.txt": "/https://Iznat_DZ/static/js/2.5e4a36f5.chunk.js.LICENSE.txt"
+    "main.css": "/NataliaKirik/Iznat_DZ/static/css/main.4988e212.chunk.css",
+    "main.js": "/NataliaKirik/Iznat_DZ/static/js/main.5485e8ad.chunk.js",
+    "main.js.map": "/NataliaKirik/Iznat_DZ/static/js/main.5485e8ad.chunk.js.map",
+    "runtime-main.js": "/NataliaKirik/Iznat_DZ/static/js/runtime-main.946723a6.js",
+    "runtime-main.js.map": "/NataliaKirik/Iznat_DZ/static/js/runtime-main.946723a6.js.map",
+    "static/js/2.5e4a36f5.chunk.js": "/NataliaKirik/Iznat_DZ/static/js/2.5e4a36f5.chunk.js",
+    "static/js/2.5e4a36f5.chunk.js.map": "/NataliaKirik/Iznat_DZ/static/js/2.5e4a36f5.chunk.js.map",
+    "index.html": "/NataliaKirik/Iznat_DZ/index.html",
+    "precache-manifest.eb10a998f870eab5c3a86d1c5e2be37e.js": "/NataliaKirik/Iznat_DZ/precache-manifest.eb10a998f870eab5c3a86d1c5e2be37e.js",
+    "service-worker.js": "/NataliaKirik/Iznat_DZ/service-worker.js",
+    "static/css/main.4988e212.chunk.css.map": "/NataliaKirik/Iznat_DZ/static/css/main.4988e212.chunk.css.map",
+    "static/js/2.5e4a36f5.chunk.js.LICENSE.txt": "/NataliaKirik/Iznat_DZ/static/js/2.5e4a36f5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.67c452bb.js",
+    "static/js/runtime-main.946723a6.js",
     "static/js/2.5e4a36f5.chunk.js",
     "static/css/main.4988e212.chunk.css",
-    "static/js/main.776b3c16.chunk.js"
+    "static/js/main.5485e8ad.chunk.js"
   ]
 }
