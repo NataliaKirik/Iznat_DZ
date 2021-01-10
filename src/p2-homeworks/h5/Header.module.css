@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+
+.headerWrapper {
+    border: 1px solid #f3f3f3;
+    background-image: url("https://image.freepik.com/free-vector/leaves-background-with-metallic-foil_79603-956.jpg");
+}
+
+.text {
+    padding: 15px 0 0 12px;
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 19px;
+    text-transform: uppercase;
+    color: #4c474c
+}
+
+.text:hover {
+    color: #211f21;
+    cursor: pointer
+}
+
+.main_Menu {
+    list-style: none;
+    padding: 10px 0 5px;
+    text-align: center;
+    background: #f3f3f3;
+}
+
+.main_Menu li {
+    display: inline-block;
+}
+
+.main_Menu li:after {
+    content: "|";
+    color: #606060;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main_Menu li:last-child:after {
+    content: none;
+}
+
+.main_Menu a {
+    text-decoration: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 10px;
+    margin: 0 34px 0 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
+
+.main_Menu a {
+    color: #9d999d;
+}
+
+.main_Menu a.active {
+    border-bottom: #feb386 3px solid;
+    color: #feb386;
+}
+
+.main_Menu a.current, .main_Menu a:hover {
+    color: #feb386;
+}
+
+.main_Menu a:before,
+.main_Menu a:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: #feb386;
+}
