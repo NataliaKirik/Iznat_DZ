@@ -14,11 +14,12 @@
     font-weight: bold;
     font-size: 19px;
     text-transform: uppercase;
-    color: #4c474c
+    color: #131313;
+    text-shadow: white 0 0 3px;
 }
 
 .text:hover {
-    color: #211f21;
+    color: black;
     cursor: pointer
 }
 
