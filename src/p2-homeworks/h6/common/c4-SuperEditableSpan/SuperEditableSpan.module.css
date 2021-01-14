@@ -1,0 +1,8 @@
+.editableSpan {
+
+}
+
+.editableSpan:hover {
+    cursor: pointer;
+    color: #373737;
+}

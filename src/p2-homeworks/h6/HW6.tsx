@@ -11,6 +11,8 @@ function HW6() {
     };
     const restore = () => {
         // setValue();
+        let valueInputFromLocalStorage=restoreState<string>("editable-span-value", value)
+        setValue(valueInputFromLocalStorage)
     };
 
     return (
