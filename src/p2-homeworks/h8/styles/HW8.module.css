@@ -1,0 +1,23 @@
+.table {
+    border: 1px solid grey;
+    width: 250px;
+    margin-bottom: 5px;
+}
+
+/* границы ячеек первого ряда таблицы */
+th {
+    border: 1px solid grey;
+}
+
+/* границы ячеек тела таблицы */
+td {
+    border: 1px solid grey;
+}
+
+.buttons_Wrapper {
+    display: flex;
+    padding: 5px;
+}
+.button{
+    cursor: pointer;
+}
