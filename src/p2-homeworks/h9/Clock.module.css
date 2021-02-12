@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.timeWrapper {
+    text-align: center;
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 30px;
+    height: 40px;
+}
+
+.dateWrapper {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #414141;
+    margin: 3px;
+}
+
+.mainWrapper {
+    border: 2px solid #b7b7b5;
+    margin: 5px;
+    width: 200px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(154, 242, 245, 0.4);
+}
+
+.buttonsWrapper {
+    text-align: center;
+}
