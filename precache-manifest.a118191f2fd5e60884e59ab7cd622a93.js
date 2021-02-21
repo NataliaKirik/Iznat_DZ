@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ed4d6348c190d57cf618798f518fb0b4",
+    "revision": "42338bdb187d9ab1583017d2fe4386fd",
     "url": "/Ignat_DZ/index.html"
   },
   {
-    "revision": "622fe6504a4ac31c4baf",
+    "revision": "5dd5466f4881c182d7e0",
     "url": "/Ignat_DZ/static/css/main.55db146d.chunk.css"
   },
   {
-    "revision": "9b390b711b3f511541dd",
-    "url": "/Ignat_DZ/static/js/2.06a96bec.chunk.js"
+    "revision": "e9093429b43a2d6646a2",
+    "url": "/Ignat_DZ/static/js/2.70120134.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/Ignat_DZ/static/js/2.06a96bec.chunk.js.LICENSE.txt"
+    "url": "/Ignat_DZ/static/js/2.70120134.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "622fe6504a4ac31c4baf",
-    "url": "/Ignat_DZ/static/js/main.8094460a.chunk.js"
+    "revision": "5dd5466f4881c182d7e0",
+    "url": "/Ignat_DZ/static/js/main.66859136.chunk.js"
   },
   {
     "revision": "d6b7832bb68c5eaac06d",
