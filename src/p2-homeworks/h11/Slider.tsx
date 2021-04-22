@@ -1,5 +1,5 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import React, {ChangeEvent} from 'react';
+import {makeStyles} from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/core/Slider';
 
@@ -9,30 +9,38 @@ const useStyles = makeStyles({
     },
 });
 
-function valuetext(value: number) {
-    return `${value}°C`;
+type RangeSliderPropsType = {
+    onChangeRange?: (value: [number, number]) => void
+    valueArr?: number[]
+    // min, max, step, disable, ...
 }
 
-export default function RangeSlider() {
-    const classes = useStyles();
-    const [value, setValue] = React.useState<number[]>([20, 37]);
 
-    const handleChange = (event: any, newValue: number | number[]) => {
-        setValue(newValue as number[]);
+const RangeSlider: React.FC<RangeSliderPropsType> = (
+    {
+        valueArr
+    }
+) => {
+
+
+    const classes = useStyles();
+
+    // const [value, setValue] = React.useState(valueArr);
+
+    const handleChange = (event: ChangeEvent<{}>, newValue: number | number[]) => {
+        // setValue(newValue as number[]);
     };
 
     return (
         <div className={classes.root}>
-            <Typography id="range-slider" gutterBottom>
-                Temperature range
-            </Typography>
             <Slider
-                value={value}
+                value={valueArr}
                 onChange={handleChange}
-                valueLabelDisplay="auto"
+                valueLabelDisplay="on"
                 aria-labelledby="range-slider"
-                getAriaValueText={valuetext}
+
             />
         </div>
     );
 }
+export default RangeSlider;
