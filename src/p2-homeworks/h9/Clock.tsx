@@ -40,7 +40,9 @@ function Clock() {
         minute: 'numeric',
         second: 'numeric'
     }
+    // @ts-ignore
     const stringTime = date.toLocaleString("ru", timeOptions); // fix with date
+    // @ts-ignore
     const stringDate = date.toLocaleString("ru", dateOptions); // fix with date
 
     return (
