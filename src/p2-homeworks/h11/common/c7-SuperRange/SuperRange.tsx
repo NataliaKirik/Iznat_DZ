@@ -1,5 +1,6 @@
+import {makeStyles} from "@material-ui/core";
+import Slider from "@material-ui/core/Slider";
 import React, {ChangeEvent, DetailedHTMLProps, InputHTMLAttributes} from "react";
-import s from "./SuperRange.module.css";
 
 // тип пропсов обычного инпута
 type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
@@ -8,36 +9,43 @@ type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElem
 // (чтоб не писать value: string, onChange: ...; они уже все описаны в DefaultInputPropsType)
 type SuperRangePropsType = DefaultInputPropsType & { // и + ещё пропсы которых нет в стандартном инпуте
     onChangeRange?: (value: number) => void
+    value?: number
+    max: number
 };
+
+const useStyles = makeStyles({
+    root: {
+        width: 600,
+    },
+});
 
 const SuperRange: React.FC<SuperRangePropsType> = (
     {
         type, // достаём и игнорируем чтоб нельзя было задать другой тип инпута
         onChange, onChangeRange,
-        className,
-
-        ...restProps// все остальные пропсы попадут в объект restProps
+        className, value, max
     }
 ) => {
-    const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
-        onChange && onChange(e); // сохраняем старую функциональность
+    const classes = useStyles();
 
-        onChangeRange && onChangeRange(+e.currentTarget.value);
+    const onChangeCallback = (event: ChangeEvent<{}>, newValue: number | number[]) => {
+        // @ts-ignore
+        onChange && onChange(event); // сохраняем старую функциональность
+
+        onChangeRange && onChangeRange(newValue as number);
     }
 
-    const finalRangeClassName = `${s.range} ${className ? className : ""}`;
+    // const finalRangeClassName = `${s.range} ${className ? className : ""}`;
 
     return (
-        <>
-            <input
-                type={"range"}
+        <div className={classes.root}>
+            <Slider
+                value={value}
                 onChange={onChangeCallback}
-                className={finalRangeClassName}
-                value={restProps.value}
-
-                {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
+                valueLabelDisplay="on"
+                aria-labelledby="range-slider"
             />
-        </>
+        </div>
     );
 }
 
