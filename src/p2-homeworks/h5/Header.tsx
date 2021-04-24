@@ -2,11 +2,17 @@ import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
 import {PATH} from "./Routes";
 import s from './Header.module.css'
+import {useSelector} from "react-redux";
+import {AppStoreType} from "../h10/bll/store";
+import './Header.css'
 
 function Header() {
-    let [showMenu, setShowMenu] = useState(false)
+    let [showMenu, setShowMenu] = useState(true)
+    const theme = useSelector((state: AppStoreType) => state.theme.selectedTheme);
+
+
     return (
-        <div className={s.headerWrapper}>
+        <div className={`${theme} ${s.headerWrapper}`}>
             <div className={s.componentRoutesWrapper}>
                 <div className={s.text} onClick={() => {
                     setShowMenu(!showMenu)

@@ -5,7 +5,7 @@ import {changeThemeC} from "./bll/themeReducer";
 import {useDispatch, useSelector} from "react-redux";
 import {AppStoreType} from "../h10/bll/store";
 
-const themes = ['dark', 'red', 'some'];
+const themes = ['green', 'blue', 'red'];
 
 
 function HW12() {
@@ -21,7 +21,7 @@ function HW12() {
     return (
         <div className={s[theme]}>
             <hr/>
-            <span className={s[theme + '-text']}>
+            <span className={`${s[theme + '-text']} ${s.text}`}>
                 homeworks 12
             </span>
 

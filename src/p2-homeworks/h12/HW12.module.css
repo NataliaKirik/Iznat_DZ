@@ -1,9 +1,19 @@
-.dark {
+.text {
+    padding: 0 10px 0 3px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #f7fdf5;
+}
+
+.blue {
     background: dimgrey;
 }
 
-.dark-text {
-    color: aliceblue;
+.blue-text {
+    color: #67c8f5;
 }
 
 .red {
@@ -14,10 +24,10 @@
     color: aqua;
 }
 
-.some {
+.green {
     background: lightgreen;
 }
 
-.some-text {
+.green-text {
     color: darkslateblue;
 }

@@ -7,7 +7,7 @@ type initStateType = {
 }
 
 const initState = {
-    selectedTheme: 'dark'
+    selectedTheme: 'green'
 };
 
 export const themeReducer = (state: initStateType = initState, action: changeThemeCActionType): initStateType => { // fix any
