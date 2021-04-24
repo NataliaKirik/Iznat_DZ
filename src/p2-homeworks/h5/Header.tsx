@@ -4,7 +4,6 @@ import {PATH} from "./Routes";
 import s from './Header.module.css'
 import {useSelector} from "react-redux";
 import {AppStoreType} from "../h10/bll/store";
-import './Header.css'
 
 function Header() {
     let [showMenu, setShowMenu] = useState(true)
@@ -12,14 +11,14 @@ function Header() {
 
 
     return (
-        <div className={`${theme} ${s.headerWrapper}`}>
+        <div className={`${s[theme]} ${s.headerWrapper}`}>
             <div className={s.componentRoutesWrapper}>
-                <div className={s.text} onClick={() => {
+                <div className={`${s[theme + '-text']} ${s.text}`} onClick={() => {
                     setShowMenu(!showMenu)
                 }}>React homeworks
                 </div>
             </div>
-            {showMenu && (<ul className={s.main_Menu}>
+            {showMenu && (<ul className={`${s[theme + '_Menu']} ${s.main_Menu}`}>
                 <li><NavLink to={PATH.PRE_JUNIOR} activeClassName={s.active}>Pre Junior</NavLink></li>
                 <li><NavLink to={PATH.JUNIOR} activeClassName={s.active}>Junior </NavLink></li>
                 <li><NavLink to={PATH.JUNIOR_PLUS} activeClassName={s.active}>Junior Plus</NavLink></li>

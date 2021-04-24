@@ -5,6 +5,15 @@
     height: 110px;
 }
 
+.blue {
+    background-image: url("https://images.pexels.com/photos/249203/pexels-photo-249203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+.red {
+    background-position: center;
+    background-image: url("https://images.pexels.com/photos/249203/pexels-photo-249203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+}
+
 .text {
     padding: 10px 0 0 12px;
     margin: 0 0 10px 0;
@@ -20,6 +29,16 @@
 
 .text:hover {
     text-shadow: #5da95d 0 0 6px;
+    cursor: pointer
+}
+
+.blue-text:hover {
+    text-shadow: #67c8f5 0 0 6px;
+    cursor: pointer
+}
+
+.red-text:hover {
+    text-shadow: #ef3a6e 0 0 6px;
     cursor: pointer
 }
 
@@ -69,6 +88,22 @@
 
 .main_Menu a.current, .main_Menu a:hover {
     color: #5da95d;
+}
+
+.blue_Menu a.active {
+    border-bottom: #08efef 3px solid;
+}
+
+.blue_Menu a.current, .blue_Menu a:hover {
+    color: #80d3fa;
+}
+
+.red_Menu a.active {
+    border-bottom: #ef3a6e 3px solid;
+}
+
+.red_Menu a.current, .red_Menu a:hover {
+    color: #ef3a6e;
 }
 
 .main_Menu a:before,
