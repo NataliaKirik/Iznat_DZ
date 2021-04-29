@@ -1,5 +1,4 @@
-import {makeStyles} from "@material-ui/core";
-import Slider from "@material-ui/core/Slider";
+import {makeStyles, Slider} from "@material-ui/core";
 import React, {ChangeEvent, DetailedHTMLProps, InputHTMLAttributes} from "react";
 
 // тип пропсов обычного инпута
